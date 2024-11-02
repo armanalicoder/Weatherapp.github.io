@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(0, 34, 128);
+}
+#weather{
+    height: 550px;
+    width: 350px;
+    /* border: 2px solid black; */
+    margin: 0px auto;
+    border-radius: 15px;
+    background:linear-gradient(#310350,#05718f);
+    box-shadow: 10px 10px 10px white;
+    overflow: hidden;
+}
+#search{
+    /* border: 2px solid black; */
+    display: flex;
+}
+#search input{
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+#search input:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+#searchicon i{
+    font-size: 30px;
+    /* border: 2px solid black; */
+    margin-top:30px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+#searchicon i:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+.search-city img{
+    height: 250px;
+    /* width: 300px; */
+    margin: 20px 0px 0px 25px;
+}
+.search-city h2{
+    color: white;
+    text-align: center;
+    line-height: 5px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.search-city p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.main{
+    height: 420px;
+    width: 345px;
+    margin-top: 10px;
+    color: white;
+}
+.city-info{
+    display: flex;
+    justify-content: space-around;
+}
+.city-info-item1{
+    display: flex;
+    margin-top: 20px;
+}
+.city-name{
+    font-weight: 700;
+    font-size: 25px;
+}
+.weather-info{
+    display: flex;
+    justify-content: space-around;
+}
+.weather-info2{
+    text-align: center;
+    margin-top: 15px;
+}
+.weather-info h2{
+    font-size: 35px;
+    line-height: 10px;
+}
+.weather-info-2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 1px;
+}
+.forecast-info::-webkit-scrollbar{
+    height: 10px;
+}
+.forecast-info::-webkit-scrollbar-thumb{
+    background-color: #555;
+    border-radius: 10px;
+}
+.forecast-info{
+    height: 160px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+}
+.card-info{
+    height: 124px;
+    min-width: 100px;
+    border: 0px solid black;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 0px;
+}
+.search-city{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+.search-city h1{
+    font-weight: bolder;
+}
+.search-city h4{
+    font-size: large;
+}
+.errormsg{
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+.displayerror{
+    display: none;
+}
+.citydisplay{
+    display: none;
+}
+.allinfo{
+    display: none;
+}
+.mainhide{
+    display: none;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="weather">
+            <div id="search">
+                <div><input type="text" placeholder="Eg- Amethi,Lucknow,Delhi.."/></div>
+                <div id="searchicon"><i class="fa-solid fa-magnifying-glass" onclick="w()"></i></div>
+            </div>
+            <div class="errormsg displayerror">
+                <img src="img/not-found.png" height="200px"/>
+                <h1>Invalid City Name !</h1>
+                <h1>Try Again!</h1>
+            </div>
+            <div class="search-city">
+                <img src="img/search-city.png"/>
+                <h1>Search City</h1>
+                <p>Find out the weather condition <br>by City name</p>
+
+            </div>
+           <div class="main allinfo">
+            <div class="city-info">
+                <div class="city-info-item1">
+                    <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+                    <span class="city-name">City Name</span>
+                </div>
+                <div class="city-info-item2">
+                    <h2 class="date">Date</h2>
+                </div>
+            </div>
+            <div class="weather-info">
+                <div>
+                    <img class="weathericon" src="img/clouds.svg" height="150px" />
+                </div>
+               <div class="weather-info2">
+                <h2 id="temp">__°C</h2>
+                <h2 id="description">Conditions</h2>
+               </div>
+            </div>
+            <div class="weather-info-2">
+                <div>
+                    <div>
+                        <h3><i class="fa-solid fa-droplet"></i> Humidity</h3>
+                        <h3 id="humidity">__</h3>
+                    </div>  
+                </div>
+                <div>
+                    <h3><i class="fa-solid fa-wind"></i> Wind Speed</h3>
+                    <h3 id="wind">__</h3>
+                </div>
+            </div>
+            <div class="forecast-info" >
+                <div class="card-info" id="card-1">
+                    <h4>Thu 31</h4>
+                    <img src="img/rain.png" height="50px"/>
+                    <h5>28°C</h5>
+                </div>
+                <div class="card-info" id="card-2">
+                    <h4>Thu 31</h4>
+                    <img src="img/rain.png" height="50px"/>
+                    <h5>28°C</h5>
+                </div>
+                <div class="card-info" id="card-3">
+                    <h4>Thu 31</h4>
+                    <img src="img/rain.png" height="50px"/>
+                    <h5>28°C</h5>
+                </div>
+                <div class="card-info" id="card-4">
+                    <h4>Thu 31</h4>
+                    <img src="img/rain.png" height="50px"/>
+                    <h5>28°C</h5>
+                </div>
+                <div class="card-info" id="card-5">
+                    <h4>Thu 31</h4>
+                    <img src="img/rain.png" height="50px"/>
+                    <h5>28°C</h5>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+        
+    <script src="js/script.js"></script>
+</body>
+</html>
